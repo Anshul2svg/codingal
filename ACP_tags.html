@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Masterclass - My ACP Submission</title>
+    <style>
+        /* Basic styling to keep the layout clean and readable */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+        header, footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        fieldset {
+            border: 2px solid #34495e;
+            border-radius: 6px;
+            padding: 20px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            color: #2c3e50;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. SEMANTIC HEADER -->
+    <header>
+        <h1>The Ultimate HTML Elements Showcase</h1>
+        <p>Advanced Capstone Project (ACP) Submission</p>
+    </header>
+
+    <!-- 2. NAVIGATION TAGS WITH HYPERLINKS -->
+    <nav>
+        <a href="#formatting">Formatting</a>
+        <a href="#lists">Lists</a>
+        <a href="#tables">Tables</a>
+        <a href="#media">Media & Frames</a>
+        <a href="#forms">Forms</a>
+    </nav>
+
+    <!-- 3. MAIN CONTENT CONTAINER -->
+    <main>
+
+        <!-- SECTION 1: TEXT FORMATTING & COMMENTS -->
+        <!-- COMMENT: This section demonstrates all major typography tags -->
+        <section id="formatting">
+            <h2>1. Text Formatting Elements</h2>
+            <p>This paragraph contains <b>bold text</b> alongside <strong>strongly important words</strong>.</p>
+            <p>We can also apply <i>italic styles</i> and <em>emphasized context</em> to sentences.</p>
+            <p>To show updates, we use <del>deleted text</del> and <ins>inserted text</ins>.</p>
+            <p>Important phrases can be <mark>highlighted with a marker</mark> or made <small>smaller</small>.</p>
+            <p>Mathematical formulas use superscripts: Variable X<sup>2</sup> + Y<sup>2</sup>.</p>
+            <p>Scientific notations use subscripts: Water is represented as H<sub>2</sub>O.</p>
+        </section>
+
+        <!-- SECTION 2: LISTS (UNORDERED, ORDERED, DESCRIPTION) -->
+        <section id="lists">
+            <h2>2. HTML List Varieties</h2>
+
+            <h3>Unordered Core Technologies:</h3>
+            <ul>
+                <li>HTML5 (Structure)</li>
+                <li>CSS3 (Presentation)</li>
+                <li>JavaScript (Behavior)</li>
+            </ul>
+
+            <h3>Ordered Learning Pathway:</h3>
+            <ol>
+                <li>Mastering Structural Layout Elements</li>
+                <li>Integrating Media and External Frameworks</li>
+                <li>Deploying Interactive Forms and Applications</li>
+            </ol>
+
+            <h3>Description Glossary:</h3>
+            <dl>
+                <dt>W3C</dt>
+                <dd>World Wide Web Consortium - The international standards organization for the World Wide Web.</dd>
+                <dt>URL</dt>
+                <dd>Uniform Resource Locator - The distinct global address of a specific resource on the internet.</dd>
+            </dl>
+        </section>
+
+        <!-- SECTION 3: TABLES -->
+        <section id="tables">
+            <h2>3. Tabular Data Presentation</h2>
+            <p>Below is a clean data reference table representing core project marks.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria Element</th>
+                        <th>Target Benchmarks</th>
+                        <th>Execution Pass Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semantic Tags</td>
+                        <td>Complete Layout Block Alignment</td>
+                        <td>Excellent ✅</td>
+                    </tr>
+                    <tr>
+                        <td>Form Function</td>
+                        <td>Validation & Field Grouping</td>
+                        <td>Excellent ✅</td>
+                    </tr>
+                    <tr>
+                        <td>Media Elements</td>
+                        <td>Audio, Video & Image Testing</td>
+                        <td>Excellent ✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION 4: MEDIA & IFRAMES -->
+        <section id="media">
+            <h2>4. Media Files & Embedded Frames</h2>
+
+            <h3>Self-Closing Image Tag:</h3>
+            <img src="https://picsum.photos/id/10/600/300" alt="Placeholder Mountain Landscape" width="100%" style="border-radius: 6px;">
+
+            <h3>Line Break Demonstration:</h3>
+            <p>This is line one of a break demo.<br>This is line two directly below it using a break.</p>
+
+            <h3>Native HTML5 Audio Player:</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Native HTML5 Video Player:</h3>
+            <video width="100%" height="auto" controls poster="https://via.placeholder.com/600x340">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <h3>Inline Frame Sandbox:</h3>
+            <iframe src="https://example.com" width="100%" height="250" title="Embedded Demo Frame">
+                Your browser does not support iframes.
+            </iframe>
+        </section>
+
+        <!-- SECTION 5: GROUPED INTERACTIVE FORMS -->
+        <section id="forms">
+            <h2>5. Dynamic Input Forms</h2>
+            <form action="#" method="POST">
+
+                <fieldset>
+                    <legend>User Account & Validation Details</legend>
+
+                    <div class="form-group">
+                        <label for="username">Full Identity Name:</label>
+                        <input type="text" id="username" name="user_name" placeholder="Enter Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="useremail">Electronic Mail Address:</label>
+                        <input type="email" id="useremail" name="user_email" placeholder="name@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trackselect">Preferred Core Track:</label>
+                        <select id="trackselect" name="user_track">
+                            <option value="" disabled selected>-- Choose Track Option --</option>
+                            <option value="frontend">Frontend Architecture</option>
+                            <option value="backend">Backend Engineering</option>
+                            <option value="fullstack">Full-Stack Synthesis</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Project Execution Goals:</label>
+                        <textarea id="comments" name="user_comments" rows="4" placeholder="Briefly write your goals..."></textarea>
+                    </div>
+
+                    <button type="submit">Submit Completed Profile</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 4. SEMANTIC FOOTER -->
+    <footer>
+        <p>&copy; 2026 HTML Masterclass System. Designed and coded independently for ACP Review.</p>
+    </footer>
+
+</body>
+</html>
