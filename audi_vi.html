@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio and Video Example</title>
+</head>
+<body>
+
+    <h1>Adding Audio and Video in HTML5</h1>
+    <hr>
+
+    <!-- 1. Adding Video -->
+    <h2>Video Player Example</h2>
+
+    <video width="640" height="360" controls poster="https://via.placeholder.com/640x360">
+        <!-- The browser will try to play the first source it supports -->
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+
+
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+    <hr>
+
+    <!-- 2. Adding Audio -->
+    <h2>Audio Player Example</h2>
+
+    <audio controls>
+
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+
+
+        Your browser does not support the audio element.
+    </audio>
+
+</body>
+</html>
