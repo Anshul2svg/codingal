@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Masterclass - ACP Submission</title>
+    <style>
+        /* Modern, clean layout styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+        main {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+        /* Core Table Styling Rules */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Merges thin cell borders into one neat grid line */
+            margin: 20px 0 40px 0;
+            font-size: 16px;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        /* Style table headers differently for clarity */
+        th {
+            background-color: #34495e;
+            color: white;
+            font-weight: 600;
+        }
+        /* Zebra striping - targets even rows for a softer background color */
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        /* Highlights rows when the user hovers mouse over them */
+        tr:hover {
+            background-color: #f1f4f6;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SEMANTIC HEADER -->
+    <header>
+        <h1>Tabular Data Structure Layouts</h1>
+        <p>Advanced Capstone Project (ACP) Submission</p>
+    </header>
+
+    <main>
+
+        <!-- SECTION 1: BASIC TABLE WITH HEADERS -->
+        <section>
+            <h2>1. Student Academic Performance Sheet</h2>
+            <p>This table demonstrates standard data grouping using header rows (<code>&lt;th&gt;</code>) and table data cells (<code>&lt;td&gt;</code>) along with automatic zebra striping applied via CSS.</p>
+
+            <table>
+                <caption>Mid-Term Grade Ledger</caption>
+                <thead>
+                    <tr>
+                        <th>Roll No.</th>
+                        <th>Student Name</th>
+                        <th>Core Subject</th>
+                        <th class="text-center">Grade Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Arjun Sharma</td>
+                        <td>Web Development</td>
+                        <td class="text-center"><strong>A+</strong></td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Sara Khan</td>
+                        <td>Python programming</td>
+                        <td class="text-center"><strong>A</strong></td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Rohan Das</td>
+                        <td>Data Structures</td>
+                        <td class="text-center"><strong>B+</strong></td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Ananya Iyer</td>
+                        <td>UI/UX Layout Design</td>
+                        <td class="text-center"><strong>A+</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECTION 2: ADVANCED TABLE (COLSPAN & ROWSPAN) -->
+        <section>
+            <h2>2. Course Lab Schedule (Cell Merging)</h2>
+            <p>This section showcases how cells expand horizontally using the <code>colspan</code> attribute and vertically using the <code>rowspan</code> attribute to represent continuous blocks of time.</p>
+
+            <table>
+                <caption>Weekly Computer Lab Bookings</caption>
+                <thead>
+                    <tr>
+                        <th>Time Slot</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM - 11:00 AM</td>
+                        <!-- Rowspan merges 2 rows vertically down under Monday -->
+                        <td rowspan="2">HTML5 Foundations Lab</td>
+                        <td>CSS Grid Design</td>
+                        <td>JavaScript Engine Basics</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM - 01:00 PM</td>
+                        <!-- Colspan merges 2 columns horizontally across Tue and Wed -->
+                        <td colspan="2" class="text-center" style="background-color: #fbeee6; color: #d35400;"><em>System Maintenance Window (Lab Closed)</em></td>
+                    </tr>
+                    <tr>
+                        <td>02:00 PM - 04:00 PM</td>
+                        <td>Project Review Session</td>
+                        <td>Git Version Control</td>
+                        <td>Capstone Evaluation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+</html>
